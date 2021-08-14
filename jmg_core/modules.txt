@@ -1,1 +1,4 @@
 Jmg Core
+CRM
+Projects
+Settings

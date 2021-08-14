@@ -1,0 +1,27 @@
+{
+ "content": null,
+ "creation": "2021-08-10 15:40:12.495300",
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "inbox",
+ "idx": 0,
+ "modified": "2021-08-10 15:40:12.495300",
+ "modified_by": "Administrator",
+ "module": "Jmg Core",
+ "name": "inbox",
+ "owner": "Administrator",
+ "page_name": "Inbox",
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "All"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Inbox"
+}

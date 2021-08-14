@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-08-14 12:33:24.224615",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user_id",
+  "user_phone",
+  "user_first_name",
+  "user_last_name",
+  "user_full_name",
+  "track_email_opens",
+  "record_calls",
+  "user_role",
+  "user_email",
+  "plan_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "user_phone",
+   "fieldtype": "Data",
+   "label": "User Phone"
+  },
+  {
+   "fieldname": "user_first_name",
+   "fieldtype": "Data",
+   "label": "User First Name"
+  },
+  {
+   "fieldname": "user_last_name",
+   "fieldtype": "Data",
+   "label": "User Last Name"
+  },
+  {
+   "fieldname": "user_full_name",
+   "fieldtype": "Data",
+   "label": "User Full Name"
+  },
+  {
+   "default": "1",
+   "fieldname": "track_email_opens",
+   "fieldtype": "Check",
+   "label": "Track Email Opens"
+  },
+  {
+   "default": "0",
+   "fieldname": "record_calls",
+   "fieldtype": "Data",
+   "label": "Record Calls"
+  },
+  {
+   "fieldname": "user_role",
+   "fieldtype": "Data",
+   "label": "User Role"
+  },
+  {
+   "fieldname": "user_email",
+   "fieldtype": "Data",
+   "label": "User Email"
+  },
+  {
+   "fieldname": "plan_type",
+   "fieldtype": "Data",
+   "label": "Plan Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-08-14 12:35:05.945272",
+ "modified_by": "Administrator",
+ "module": "Jmg Core",
+ "name": "Membership",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

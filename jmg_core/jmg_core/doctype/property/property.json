@@ -1,0 +1,385 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2021-08-09 12:37:57.167121",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sb_004",
+  "owner_company_name",
+  "owner_company_contact",
+  "property_type",
+  "property_secondary_type",
+  "column_break_5",
+  "tenancy",
+  "property_features",
+  "for_sale",
+  "for_lease",
+  "sb_003",
+  "address",
+  "address_2",
+  "city",
+  "column_break_15",
+  "state",
+  "zip",
+  "county",
+  "sb_002",
+  "building_status",
+  "building_year_built",
+  "building_area",
+  "building_class",
+  "building_year_renovated",
+  "drive_ins",
+  "power",
+  "column_break_27",
+  "number_of_loading_docks",
+  "ceiling_height_range",
+  "rail_lines",
+  "sewer",
+  "sprinklers",
+  "water",
+  "parking_ratio",
+  "number_of_parking_spaces",
+  "for_sale_section",
+  "for_sale_price",
+  "sale_company",
+  "sale_company_contact",
+  "for_lease_section",
+  "leasing_company_name",
+  "leasing_company_contact",
+  "total_available_space",
+  "typical_floor_size",
+  "rent_sf_yr",
+  "sb_001",
+  "route",
+  "image",
+  "propertyid",
+  "is_published"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "address"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "city"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "state"
+  },
+  {
+   "fieldname": "zip",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "zip"
+  },
+  {
+   "default": "0",
+   "fieldname": "for_sale",
+   "fieldtype": "Check",
+   "label": "For Sale"
+  },
+  {
+   "default": "0",
+   "fieldname": "for_lease",
+   "fieldtype": "Check",
+   "label": "For Lease"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "image"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "sb_001",
+   "fieldtype": "Section Break",
+   "label": "Website"
+  },
+  {
+   "fieldname": "property_type",
+   "fieldtype": "Link",
+   "label": "Type",
+   "options": "Property Type"
+  },
+  {
+   "fieldname": "sb_004",
+   "fieldtype": "Section Break",
+   "label": "Basic"
+  },
+  {
+   "fieldname": "property_features",
+   "fieldtype": "Table MultiSelect",
+   "label": "Property Features",
+   "options": "Property Features"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sb_003",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sb_002",
+   "fieldtype": "Section Break",
+   "label": "Building"
+  },
+  {
+   "fieldname": "building_year_built",
+   "fieldtype": "Int",
+   "label": "Year Built"
+  },
+  {
+   "fieldname": "property_secondary_type",
+   "fieldtype": "Link",
+   "label": "Secondary Type",
+   "options": "Property Secondary Type"
+  },
+  {
+   "fieldname": "building_status",
+   "fieldtype": "Select",
+   "label": "Building Status",
+   "options": "Existing\nUnder Renovation\nUnder Construction\nProposed"
+  },
+  {
+   "fieldname": "tenancy",
+   "fieldtype": "Select",
+   "label": "Tenancy",
+   "options": "Single Tenant\nMultiple Tenant"
+  },
+  {
+   "fieldname": "building_area",
+   "fieldtype": "Int",
+   "label": "Building Area"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "for_sale_section",
+   "fieldtype": "Section Break",
+   "label": "For Sale"
+  },
+  {
+   "fieldname": "building_year_renovated",
+   "fieldtype": "Int",
+   "label": "Year Renovated"
+  },
+  {
+   "fieldname": "building_class",
+   "fieldtype": "Select",
+   "label": "Building Class",
+   "options": "A\nB\nC"
+  },
+  {
+   "fieldname": "address_2",
+   "fieldtype": "Data",
+   "label": "Address 2"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "county",
+   "fieldtype": "Link",
+   "label": "County",
+   "options": "County"
+  },
+  {
+   "fieldname": "sale_company",
+   "fieldtype": "Link",
+   "label": "Sale Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "for_sale_price",
+   "fieldtype": "Currency",
+   "label": "For Sale Price",
+   "non_negative": 1,
+   "options": "USD",
+   "precision": "0"
+  },
+  {
+   "fieldname": "sale_company_contact",
+   "fieldtype": "Link",
+   "label": "Sale Company Contact",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "drive_ins",
+   "fieldtype": "Data",
+   "label": "Drive Ins"
+  },
+  {
+   "fieldname": "power",
+   "fieldtype": "Data",
+   "label": "Power"
+  },
+  {
+   "fieldname": "number_of_loading_docks",
+   "fieldtype": "Int",
+   "label": "Number Of Loading Docks"
+  },
+  {
+   "fieldname": "ceiling_height_range",
+   "fieldtype": "Data",
+   "label": "Ceiling Height Range"
+  },
+  {
+   "fieldname": "rail_lines",
+   "fieldtype": "Data",
+   "label": "Rail Lines"
+  },
+  {
+   "fieldname": "sewer",
+   "fieldtype": "Data",
+   "label": "Sewer"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "for_lease_section",
+   "fieldtype": "Section Break",
+   "label": "For Lease"
+  },
+  {
+   "fieldname": "leasing_company_name",
+   "fieldtype": "Link",
+   "label": "Leasing Company Name",
+   "options": "Company"
+  },
+  {
+   "fieldname": "leasing_company_contact",
+   "fieldtype": "Link",
+   "label": "Leasing Company Contact",
+   "options": "Contact"
+  },
+  {
+   "description": "(SF)",
+   "fieldname": "total_available_space",
+   "fieldtype": "Int",
+   "label": "Total Available Space"
+  },
+  {
+   "fieldname": "typical_floor_size",
+   "fieldtype": "Int",
+   "label": "Typical Floor Size"
+  },
+  {
+   "fieldname": "rent_sf_yr",
+   "fieldtype": "Currency",
+   "label": "Rent/SF/Yr",
+   "non_negative": 1,
+   "options": "USD",
+   "precision": "2"
+  },
+  {
+   "fieldname": "parking_ratio",
+   "fieldtype": "Float",
+   "label": "Parking Ratio",
+   "precision": "2"
+  },
+  {
+   "fieldname": "sprinklers",
+   "fieldtype": "Data",
+   "label": "Sprinklers"
+  },
+  {
+   "fieldname": "water",
+   "fieldtype": "Data",
+   "label": "Water"
+  },
+  {
+   "fieldname": "propertyid",
+   "fieldtype": "Data",
+   "label": "PropertyID",
+   "unique": 1
+  },
+  {
+   "fieldname": "number_of_parking_spaces",
+   "fieldtype": "Int",
+   "label": "Number Of Parking Spaces"
+  },
+  {
+   "fieldname": "owner_company_name",
+   "fieldtype": "Link",
+   "label": "Owner Company Name",
+   "options": "Company"
+  },
+  {
+   "fieldname": "owner_company_contact",
+   "fieldtype": "Link",
+   "label": "Owner Company Contact",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "has_web_view": 1,
+ "image_field": "image",
+ "is_published_field": "is_published",
+ "links": [],
+ "modified": "2021-08-10 11:44:55.842668",
+ "modified_by": "Administrator",
+ "module": "Jmg Core",
+ "name": "Property",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1
+  }
+ ],
+ "route": "properties",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "address",
+ "track_changes": 1
+}
