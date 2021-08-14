@@ -154,9 +154,7 @@ class Lead(SellingController):
 		contact.update({
 			"first_name": first_name,
 			"last_name": last_name,
-			"salutation": self.salutation,
-			"gender": self.gender,
-			"designation": self.designation,
+			
 		})
 
 		if self.email_id:
@@ -305,7 +303,7 @@ def get_lead_details(lead, posting_date=None, company=None):
 	out.update({
 		"territory": lead.territory,
 		"customer_name": lead.company_name or lead.lead_name,
-		"contact_display": " ".join(filter(None, [lead.salutation, lead.lead_name])),
+		"contact_display": lead.name,
 		"contact_email": lead.email_id,
 		"contact_mobile": lead.mobile_no,
 		"contact_phone": lead.phone,
