@@ -1,39 +1,29 @@
 {
  "actions": [],
- "allow_import": 1,
- "allow_rename": 1,
- "autoname": "field:organization_name",
- "creation": "2021-08-14 12:28:19.034249",
+ "autoname": "field:prospect_type",
+ "creation": "2021-08-23 16:56:57.897456",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "organization_name",
-  "memberships"
+  "prospect_type"
  ],
  "fields": [
   {
-   "fieldname": "organization_name",
+   "fieldname": "prospect_type",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Name",
+   "label": "Prospect Type",
    "reqd": 1,
    "unique": 1
-  },
-  {
-   "fieldname": "memberships",
-   "fieldtype": "Table",
-   "label": "Memberships",
-   "options": "Membership"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-08-14 12:35:57.890197",
+ "modified": "2021-08-23 17:02:10.431658",
  "modified_by": "Administrator",
  "module": "Jmg Core",
- "name": "Organization",
- "name_case": "Title Case",
+ "name": "Prospect Type",
  "owner": "Administrator",
  "permissions": [
   {

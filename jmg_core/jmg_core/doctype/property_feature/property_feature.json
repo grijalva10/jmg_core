@@ -19,13 +19,12 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Name",
-   "reqd": 1,
    "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-08-10 10:21:12.439043",
+ "modified": "2021-08-24 11:45:50.522940",
  "modified_by": "Administrator",
  "module": "Jmg Core",
  "name": "Property Feature",

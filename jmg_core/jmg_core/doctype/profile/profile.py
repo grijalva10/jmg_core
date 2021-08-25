@@ -1,14 +1,8 @@
 # Copyright (c) 2021, JMG and contributors
 # For license information, please see license.txt
 
-
-import frappe
-from frappe import _
-from frappe.utils import comma_and
+# import frappe
 from frappe.model.document import Document
 
-
-class Company(Document):
-    pass
-
-
+class Profile(Document):
+	pass

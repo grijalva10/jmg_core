@@ -1,43 +1,80 @@
 {
  "actions": [],
+ "allow_events_in_timeline": 1,
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:company_name",
- "creation": "2021-08-10 10:06:55.105755",
+ "autoname": "field:owner",
+ "color": "red",
+ "creation": "2021-08-15 14:49:18.807840",
  "doctype": "DocType",
+ "document_type": "Document",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "company_name",
-  "image",
-  "description"
+  "owner",
+  "properties",
+  "address",
+  "city",
+  "state",
+  "zip_code"
  ],
  "fields": [
   {
-   "fieldname": "company_name",
+   "fieldname": "properties",
+   "fieldtype": "Table",
+   "label": "Properties",
+   "options": "Properties"
+  },
+  {
+   "fieldname": "address",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "in_preview": 1,
    "in_standard_filter": 1,
+   "label": "Address"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "State"
+  },
+  {
+   "fieldname": "zip_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Zip Code"
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Name",
    "reqd": 1,
    "unique": 1
-  },
-  {
-   "fieldname": "image",
-   "fieldtype": "Attach Image",
-   "label": "image"
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Data",
-   "label": "Description"
   }
  ],
- "image_field": "image",
+ "icon": "tools",
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2021-08-10 10:11:06.883241",
+ "links": [
+  {
+   "link_doctype": "Property",
+   "link_fieldname": "owner"
+  },
+  {
+   "link_doctype": "Prospect",
+   "link_fieldname": "company"
+  }
+ ],
+ "modified": "2021-08-24 14:16:38.212492",
  "modified_by": "Administrator",
  "module": "Jmg Core",
  "name": "Company",
@@ -57,8 +94,8 @@
    "write": 1
   }
  ],
+ "show_name_in_global_search": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "company_name",
  "track_changes": 1
 }

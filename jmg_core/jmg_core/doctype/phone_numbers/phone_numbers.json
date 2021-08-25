@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "autoname": "field:phone",
+ "creation": "2021-08-23 17:54:37.196168",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "phone",
+  "type"
+ ],
+ "fields": [
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Phone",
+   "options": "Phone",
+   "unique": 1
+  },
+  {
+   "default": "Cell",
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Cell\nDirect\niPhone\nOffice\nFax\nOther"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-08-24 13:52:10.214650",
+ "modified_by": "Administrator",
+ "module": "Jmg Core",
+ "name": "Phone Numbers",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

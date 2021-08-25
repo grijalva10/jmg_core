@@ -19,13 +19,12 @@
    "in_standard_filter": 1,
    "label": "Feature",
    "options": "Property Feature",
-   "reqd": 1,
    "unique": 1
   }
  ],
  "istable": 1,
  "links": [],
- "modified": "2021-08-10 10:22:44.829191",
+ "modified": "2021-08-24 11:45:37.876870",
  "modified_by": "Administrator",
  "module": "Jmg Core",
  "name": "Property Features",

@@ -1,8 +1,9 @@
 // Copyright (c) 2021, JMG and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on('Membership', {
+frappe.ui.form.on('Prospect', {
 	// refresh: function(frm) {
 
 	// }
+	
 });

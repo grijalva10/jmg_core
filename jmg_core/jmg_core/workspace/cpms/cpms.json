@@ -1,7 +1,7 @@
 {
  "category": "Modules",
  "charts": [],
- "creation": "2021-08-16 11:11:03.717373",
+ "creation": "2021-08-23 14:14:23.103010",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
  "docstatus": 0,
@@ -12,24 +12,24 @@
  "idx": 0,
  "is_default": 0,
  "is_standard": 1,
- "label": "JMG",
+ "label": "CPMS",
  "links": [
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Property",
+   "label": "Properties",
    "link_to": "Property",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2021-08-23 13:44:22.053055",
+ "modified": "2021-08-23 14:14:23.103010",
  "modified_by": "Administrator",
  "module": "Jmg Core",
- "name": "JMG",
+ "name": "CPMS",
  "owner": "Administrator",
  "pin_to_bottom": 0,
- "pin_to_top": 1,
+ "pin_to_top": 0,
  "shortcuts": []
 }

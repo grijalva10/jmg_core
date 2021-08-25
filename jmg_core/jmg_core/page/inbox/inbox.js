@@ -9,20 +9,15 @@ frappe.pages['inbox'].on_page_load = function(wrapper) {
 	let $btn = page.set_primary_action('New', () => create_new(), 'fa fa-address-book');
 	page.add_menu_item('Send Email', () => open_email_dialog(), true);
 	
-	frappe.db.get_list('Property', {
-    fields: ['address', 'city']}).then(records => {
-    console.log(records)
-    	
-    });
+	page.set_indicator('Inbox', 'red')
 	
-	frappe.ui.form.make_control({
-    parent: $wrapper.find('.my-control'),
-    df: {
-        label: 'Due Date',
-        fieldname: 'due_date',
-        fieldtype: 'Date'
-    },
-    render_input: true
-})
+	const datatable = new DataTable('#datatable', {
+	columns: [ 'First Name', 'Last Name', 'Position' ],
+	data: [
+	    [ 'Don', 'Joe', 'Designer' ],
+	    [ 'Mary', 'Jane', 'Software Developer' ]
+	    ]
+		
+	});
 }
 
