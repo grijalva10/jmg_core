@@ -1,0 +1,18 @@
+[
+ {
+  "company": "Rexford",
+  "docstatus": 0,
+  "doctype": "Prospect",
+  "first_name": "Jeff",
+  "last_contact": null,
+  "last_name": "Grijalva",
+  "modified": "2021-08-24 14:17:30.581481",
+  "name": "Jeff Grijalva",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "phone_numbers": [],
+  "status": "Inbox",
+  "type": "owner"
+ }
+]
