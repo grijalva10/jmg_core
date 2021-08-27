@@ -17,7 +17,11 @@
   "status",
   "last_contact",
   "column_break_7",
-  "phone_numbers"
+  "phone_numbers",
+  "phone",
+  "value_1",
+  "value_2",
+  "result"
  ],
  "fields": [
   {
@@ -72,11 +76,32 @@
   {
    "fieldname": "column_break_7",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Read Only",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "value_1",
+   "fieldtype": "Int",
+   "label": "Value 1"
+  },
+  {
+   "fieldname": "value_2",
+   "fieldtype": "Int",
+   "label": "Value 2"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Int",
+   "label": "Result",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-08-24 11:25:23.744621",
+ "modified": "2021-08-27 13:24:49.518075",
  "modified_by": "Administrator",
  "module": "Jmg Core",
  "name": "Prospect",
