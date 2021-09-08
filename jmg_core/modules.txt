@@ -1,2 +1,3 @@
 Jmg Core
 Settings
+JMG CRE
