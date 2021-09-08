@@ -173,4 +173,4 @@ user_data_fields = [
 # 	"jmg_core.auth.validate"
 # ]
 
-# fixtures = ['Lead', 'Property', 'Company']
+## fixtures = ['Web Page']
