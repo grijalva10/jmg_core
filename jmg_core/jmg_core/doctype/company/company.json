@@ -3,7 +3,7 @@
  "allow_events_in_timeline": 1,
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:owner",
+ "autoname": "field:company",
  "color": "red",
  "creation": "2021-08-15 14:49:18.807840",
  "doctype": "DocType",
@@ -11,19 +11,20 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "owner",
+  "company",
   "properties",
+  "address_section_section",
   "address",
   "city",
   "state",
-  "zip_code"
+  "zip_code",
+  "contacts"
  ],
- "fields": [
-  {
+ "fields": [{
    "fieldname": "properties",
    "fieldtype": "Table",
    "label": "Properties",
-   "options": "Properties"
+   "options": "Property List"
   },
   {
    "fieldname": "address",
@@ -54,46 +55,46 @@
    "label": "Zip Code"
   },
   {
-   "fieldname": "owner",
+   "fieldname": "company",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Name",
+   "label": "Company",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "address_section_section",
+   "fieldtype": "Section Break",
+   "label": "Address Section"
+  },
+  {
+   "fieldname": "contacts",
+   "fieldtype": "Table",
+   "label": "Contacts",
+   "options": "Contacts"
   }
  ],
  "icon": "tools",
  "index_web_pages_for_search": 1,
- "links": [
-  {
-   "link_doctype": "Property",
-   "link_fieldname": "owner"
-  },
-  {
-   "link_doctype": "Prospect",
-   "link_fieldname": "company"
-  }
- ],
- "modified": "2021-08-24 14:16:38.212492",
+ "links": [],
+ "modified": "2021-09-08 09:57:32.802102",
  "modified_by": "Administrator",
  "module": "Jmg Core",
  "name": "Company",
  "name_case": "Title Case",
  "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
+ "permissions": [{
+  "create": 1,
+  "delete": 1,
+  "email": 1,
+  "export": 1,
+  "print": 1,
+  "read": 1,
+  "report": 1,
+  "role": "System Manager",
+  "share": 1,
+  "write": 1
+ }],
  "show_name_in_global_search": 1,
  "sort_field": "modified",
  "sort_order": "DESC",

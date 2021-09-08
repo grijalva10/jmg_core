@@ -58,7 +58,8 @@
   "route",
   "image",
   "propertyid",
-  "is_published"
+  "is_published",
+  "financials"
  ],
  "fields": [
   {
@@ -346,13 +347,19 @@
    "label": "Owner",
    "options": "Company",
    "reqd": 1
+  },
+  {
+   "fieldname": "financials",
+   "fieldtype": "Table",
+   "label": "Financials",
+   "options": "Financial"
   }
  ],
  "has_web_view": 1,
  "image_field": "image",
  "is_published_field": "is_published",
  "links": [],
- "modified": "2021-08-24 14:15:25.453588",
+ "modified": "2021-09-03 12:53:50.591362",
  "modified_by": "Administrator",
  "module": "Jmg Core",
  "name": "Property",

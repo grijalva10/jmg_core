@@ -13,11 +13,11 @@ app_license = "MIT"
 # ------------------
 
 # include js, css files in header of desk.html
-app_include_css = "/assets/jmg_core/css/jmg_core.css"
-# app_include_js = "/assets/jmg_core/js/jmg_core.js"
+# app_include_css = ["/assets/jmg_core/scss/desk.scss"]
+# app_include_js = "deskcustom.bundle.js"
 
 # include js, css files in header of web template
-web_include_css = "/assets/jmg_core/css/jmg_core_web.css"
+# web_include_css = "/assets/jmg_core/css/jmg_core_web.css"
 # web_include_js = "/assets/jmg_core/js/jmg_core.js"
 
 # include custom scss in every website theme (without file extension ".scss")
@@ -32,7 +32,7 @@ web_include_css = "/assets/jmg_core/css/jmg_core_web.css"
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
-doctype_list_js = {"doctype" : "public/js/prospect_list.js"}
+# doctype_list_js = {"doctype" : "public/js/prospect_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
@@ -173,4 +173,4 @@ user_data_fields = [
 # 	"jmg_core.auth.validate"
 # ]
 
-fixtures = ["Prospect"]
+# fixtures = ['Lead', 'Property', 'Company']

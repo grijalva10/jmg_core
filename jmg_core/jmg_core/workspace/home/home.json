@@ -71,7 +71,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Prospect",
-   "link_to": "Prospect",
+   "link_to": "Lead",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -145,9 +145,36 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "star",
+   "is_query_report": 0,
+   "label": "Email",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Newsletter",
+   "link_to": "Newsletter",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Newsletter Email Group",
+   "link_to": "Newsletter Email Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2021-08-27 11:21:17.303385",
+ "modified": "2021-09-07 15:40:25.137456",
  "modified_by": "Administrator",
  "module": "Jmg Core",
  "name": "Home",
@@ -157,6 +184,7 @@
  "shortcuts": [
   {
    "doc_view": "List",
+   "icon": "organization",
    "label": "Property List",
    "link_to": "Property",
    "type": "DocType"

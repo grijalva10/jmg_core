@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "creation": "2021-09-03 12:52:17.168360",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "gross",
+  "noi",
+  "opex",
+  "re_taxes",
+  "total_opex",
+  "year"
+ ],
+ "fields": [
+  {
+   "fieldname": "gross",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Gross"
+  },
+  {
+   "fieldname": "noi",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "NOI"
+  },
+  {
+   "fieldname": "opex",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "OPEX"
+  },
+  {
+   "fieldname": "re_taxes",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "RE Taxes"
+  },
+  {
+   "fieldname": "total_opex",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total OPEX"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Year"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-09-03 12:52:56.320180",
+ "modified_by": "Administrator",
+ "module": "Jmg Core",
+ "name": "Financial",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
