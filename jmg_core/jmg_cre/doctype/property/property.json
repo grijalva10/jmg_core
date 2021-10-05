@@ -9,28 +9,48 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "property_location_column",
+  "market",
+  "address",
+  "column_break_3",
+  "cross_streets_description",
+  "city",
+  "state",
+  "column_break_7",
+  "business_park_name",
+  "zip",
+  "county",
   "sb_004",
-  "owner",
+  "construction_status",
   "property_type",
   "property_secondary_type",
+  "roof_type",
+  "condominium",
+  "skylight",
+  "elevator",
+  "sprinkler",
+  "lighting",
+  "heating",
+  "ac",
+  "column_poo_column",
+  "building_year_built",
+  "year_refurbished",
+  "stories",
   "column_break_5",
+  "building_area",
+  "industrial_sf",
+  "office_sf",
+  "retail_sf",
+  "mezzanine_sf",
+  "sb_003",
+  "owner",
   "tenancy",
   "property_features",
   "for_sale",
   "for_lease",
   "apn",
-  "sb_003",
-  "address",
-  "address_2",
-  "city",
   "column_break_15",
-  "state",
-  "zip",
-  "county",
   "sb_002",
-  "building_status",
-  "building_year_built",
-  "building_area",
   "building_class",
   "building_year_renovated",
   "drive_ins",
@@ -56,16 +76,17 @@
   "rent_sf_yr",
   "sb_001",
   "route",
-  "image",
   "propertyid",
+  "image",
   "is_published",
   "financials"
  ],
  "fields": [
   {
+   "description": "(Please supply the information for the ENTIRE BUILDING\u2014Not just the space that is available)",
    "fieldname": "sb_004",
    "fieldtype": "Section Break",
-   "label": "Basic"
+   "label": "BUILDING INVENTORY INFORMATION"
   },
   {
    "allow_in_quick_entry": 1,
@@ -78,18 +99,20 @@
   {
    "fieldname": "property_type",
    "fieldtype": "Link",
-   "label": "Type",
+   "label": "PRIMARY USE",
    "options": "Property Type"
   },
   {
    "fieldname": "property_secondary_type",
    "fieldtype": "Link",
-   "label": "Secondary Type",
+   "label": "SECONDARY USE",
    "options": "Property Secondary Type"
   },
   {
+   "bold": 1,
    "fieldname": "column_break_5",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "label": "SQUARE FOOTAGE"
   },
   {
    "fieldname": "tenancy",
@@ -124,27 +147,21 @@
   {
    "collapsible": 1,
    "fieldname": "sb_003",
-   "fieldtype": "Section Break",
-   "label": "Address"
+   "fieldtype": "Section Break"
   },
   {
    "columns": 3,
    "fieldname": "address",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "address"
-  },
-  {
-   "fieldname": "address_2",
-   "fieldtype": "Data",
-   "label": "Address 2"
+   "label": "ADDRESS"
   },
   {
    "fieldname": "city",
    "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "city"
+   "label": "CITY"
   },
   {
    "fieldname": "column_break_15",
@@ -154,20 +171,20 @@
    "fieldname": "state",
    "fieldtype": "Data",
    "in_standard_filter": 1,
-   "label": "state"
+   "label": "STATE"
   },
   {
    "fieldname": "zip",
    "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "zip"
+   "label": "ZIP"
   },
   {
    "allow_in_quick_entry": 1,
    "fieldname": "county",
    "fieldtype": "Link",
-   "label": "County",
+   "label": "COUNTY",
    "options": "County"
   },
   {
@@ -177,20 +194,14 @@
    "label": "Building"
   },
   {
-   "fieldname": "building_status",
-   "fieldtype": "Select",
-   "label": "Building Status",
-   "options": "Existing\nUnder Renovation\nUnder Construction\nProposed"
-  },
-  {
    "fieldname": "building_year_built",
    "fieldtype": "Int",
-   "label": "Year Built"
+   "label": "YEAR BUILT"
   },
   {
    "fieldname": "building_area",
    "fieldtype": "Int",
-   "label": "Building Area"
+   "label": "TOTAL BUILDNG AREA"
   },
   {
    "fieldname": "building_class",
@@ -353,13 +364,136 @@
    "fieldtype": "Table",
    "label": "Financials",
    "options": "Financial"
+  },
+  {
+   "bold": 1,
+   "fieldname": "property_location_column",
+   "fieldtype": "Section Break",
+   "label": "PROPERTY LOCATION"
+  },
+  {
+   "fieldname": "market",
+   "fieldtype": "Link",
+   "label": "MARKET",
+   "options": "Market"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "business_park_name",
+   "fieldtype": "Data",
+   "label": "BUSINESS PARK NAME"
+  },
+  {
+   "fieldname": "cross_streets_description",
+   "fieldtype": "Data",
+   "label": "CROSS STREETS / DESCRIPTION"
+  },
+  {
+   "description": "\nBuilding construction status",
+   "fieldname": "construction_status",
+   "fieldtype": "Select",
+   "label": "CONSTRUCTION STATUS",
+   "options": "Existing\nUnder Renovation\nUnder Construction\nProposed\nDemolished\nConversion\nRetrofit/Renovation"
+  },
+  {
+   "fieldname": "column_poo_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "year_refurbished",
+   "fieldtype": "Int",
+   "label": "YEAR REFURBISHED"
+  },
+  {
+   "fieldname": "stories",
+   "fieldtype": "Int",
+   "label": "STORIES"
+  },
+  {
+   "fieldname": "industrial_sf",
+   "fieldtype": "Int",
+   "label": "INDUSTRIAL SF",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "office_sf",
+   "fieldtype": "Int",
+   "label": "OFFICE SF",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "retail_sf",
+   "fieldtype": "Int",
+   "label": "RETAIL SF",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "mezzanine_sf",
+   "fieldtype": "Int",
+   "label": "MEZZANINE SF",
+   "non_negative": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "condominium",
+   "fieldtype": "Check",
+   "label": "CONDOMINIUM"
+  },
+  {
+   "default": "0",
+   "fieldname": "skylight",
+   "fieldtype": "Check",
+   "label": "SKYLIGHT"
+  },
+  {
+   "default": "0",
+   "fieldname": "elevator",
+   "fieldtype": "Check",
+   "label": "ELEVATOR"
+  },
+  {
+   "fieldname": "sprinkler",
+   "fieldtype": "Select",
+   "label": "SPRINKLER",
+   "options": "YES\nNO\nESFR\nWET\nDRY"
+  },
+  {
+   "fieldname": "roof_type",
+   "fieldtype": "Select",
+   "label": "ROOF TYPE",
+   "options": "CON (Concrete, Poured)\nHID (Hidden- Office Bldg)\nLAM (Laminated/Glu Wood Beam)\nMTL (Metal) 0 STB (Steel Beam, Bow Truss)\nSTF (Steel Beam, Flat, Solid, Truss)\nSTM (Steel Beam + Metal Roof Surf)\nSTT (Steel Beam, Tapered)\nTBD (To Be Determined)\nVARIES (Various Types)\nVERIFY (To be Verified)\nWDB (Unlaminated Wood Beams, Bow Truss)\nWDF (Unlaminated Wood Beams, Flat)"
+  },
+  {
+   "fieldname": "lighting",
+   "fieldtype": "Select",
+   "label": "LIGHTING",
+   "options": "FLOUR (Fluorescent)\nHALGN (Halogen)\nINCAN (Incandescent)\nMERC (Mercury Vapor)\nMIXED (Mixed Type)\nMTLHL (Metal Halide)\nOTHER (Other Type)\nSODM (Sodium Vapor)\nTBD (To Be Determined)\nVARIES (Various Types)"
+  },
+  {
+   "fieldname": "heating",
+   "fieldtype": "Select",
+   "label": "HEATING",
+   "options": "FAU (Forced Air Units)\nHVAC (Heating Ventilation AC)\nMIXED (Mixed Type)\nNONE\nOTHER (Other Type)\nRADIANT (Radiant Heaters)\nSPACE (Space Heaters)\nVARIES (Various Types)\nVERIFY (To be Verified)"
+  },
+  {
+   "fieldname": "ac",
+   "fieldtype": "Select",
+   "label": "A/C",
+   "options": "A/C (Refrigerated Air Conditioning)\nEVAP (Evaporated Swamp Coolers)\nHVAC (Heating Ventilation AC)\nMIXED (Mixed Type)\nNONE\nOTHER (Other Type)\nTBD (To be Determined)\nVARIES (Various Types)\nVERIFY (To be Verified)"
   }
  ],
  "has_web_view": 1,
  "image_field": "image",
  "is_published_field": "is_published",
  "links": [],
- "modified": "2021-09-08 11:38:57.131483",
+ "modified": "2021-10-04 16:00:39.118553",
  "modified_by": "Administrator",
  "module": "JMG CRE",
  "name": "Property",
