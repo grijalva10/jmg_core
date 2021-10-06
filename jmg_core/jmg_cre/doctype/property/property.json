@@ -93,7 +93,7 @@
    "fieldname": "owner",
    "fieldtype": "Link",
    "label": "Owner",
-   "options": "Company",
+   "options": "CRE Company",
    "reqd": 1
   },
   {
@@ -287,7 +287,7 @@
    "fieldname": "sale_company",
    "fieldtype": "Link",
    "label": "Sale Company",
-   "options": "Company"
+   "options": "CRE Company"
   },
   {
    "fieldname": "sale_company_contact",
@@ -305,7 +305,7 @@
    "fieldname": "leasing_company_name",
    "fieldtype": "Link",
    "label": "Leasing Company Name",
-   "options": "Company"
+   "options": "CRE Company"
   },
   {
    "fieldname": "leasing_company_contact",
@@ -493,7 +493,7 @@
  "image_field": "image",
  "is_published_field": "is_published",
  "links": [],
- "modified": "2021-10-04 16:00:39.118553",
+ "modified": "2021-10-05 11:05:26.126375",
  "modified_by": "Administrator",
  "module": "JMG CRE",
  "name": "Property",

@@ -3,7 +3,7 @@
  "allow_guest_to_view": 1,
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "format:{address}, {city}, {state} {zip} ",
+ "autoname": "format:{address}, {city}, {state} {zip}",
  "creation": "2021-08-09 12:37:57.167121",
  "doctype": "DocType",
  "editable_grid": 1,

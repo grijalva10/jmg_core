@@ -41,7 +41,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Company",
-   "options": "Company"
+   "options": "CRE Company"
   },
   {
    "fieldname": "type",
@@ -102,7 +102,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-08-30 09:59:42.461699",
+ "modified": "2021-10-05 11:05:25.932591",
  "modified_by": "Administrator",
  "module": "Jmg Core",
  "name": "Lead",

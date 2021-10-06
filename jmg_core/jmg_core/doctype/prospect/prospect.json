@@ -41,7 +41,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Company",
-   "options": "Company"
+   "options": "CRE Company"
   },
   {
    "fieldname": "type",
@@ -101,7 +101,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-08-27 13:24:49.518075",
+ "modified": "2021-10-05 11:05:25.690269",
  "modified_by": "Administrator",
  "module": "Jmg Core",
  "name": "Prospect",
